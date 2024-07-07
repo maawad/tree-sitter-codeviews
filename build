@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+# pip install -r requirements-dev.txt
+
+/Users/mawad/miniconda3/bin/pip uninstall comex
+# python setup.py develop 
+
+/Users/mawad/miniconda3/bin/pip install -r requirements-dev.txt
+
+/Users/mawad/miniconda3/bin/pip install -e . --config-settings editable_mode=compat

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+example="Max2.java"
+language="java"
+
+example="Max2.hip"
+language="hip"
+
+# graphs="ast,cfg,dfg"
+graphs="ast"
+
+comex --lang $language --code-file examples/$example --graphs $graphs --output dot --debug
+
+dot -Tpdf output.dot -o outputs/$example.pdf
+mv output.dot  outputs/$example.dot

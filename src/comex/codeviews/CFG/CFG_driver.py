@@ -1,6 +1,7 @@
 # from codeviews.CFG.CFG_python import CFGGraph_python
 from .CFG_csharp import CFGGraph_csharp
 from .CFG_java import CFGGraph_java
+from .CFG_hip import CFGGraph_hip
 from ...tree_parser.parser_driver import ParserDriver
 from ...utils import postprocessor
 
@@ -23,6 +24,7 @@ class CFGDriver:
         self.CFG_map = {
             "java": CFGGraph_java,
             "cs": CFGGraph_csharp,
+            "hip": CFGGraph_hip,
             # "python": CFGGraph_python
         }
 

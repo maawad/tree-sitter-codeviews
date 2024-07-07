@@ -1,14 +1,23 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "name": "Python: Debug comex CLI",
             "type": "python",
             "request": "launch",
-            "program": "data/main.py",
+            "program": "/Users/mawad/miniconda3/bin/comex",
+            "args": [
+                "--lang",
+                "hip",
+                "--code-file",
+                "examples/Max2.hip",
+                "--graphs",
+                "ast,cfg,dfg",
+                // "ast",
+                "--output",
+                "dot",
+                "--debug"
+            ],
             "console": "integratedTerminal",
             "justMyCode": true
         }
